@@ -9,14 +9,15 @@ public class TouristTicket extends Ticket {
 	// Constructor below
 	
  public TouristTicket() {
-		 
+		 this.hotelAddress=hotelAddress;
+		 this.selectTouristLocation=selectTouristLocation;
 	 }
 	
 	// Methods below
 	
  public String getHotelAddress() {
 	 
-	 return "Hello";
+	 return this.hotelAddress;
  }
  
  public String[] getTouristLocations() {

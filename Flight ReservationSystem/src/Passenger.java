@@ -10,7 +10,7 @@ public class Passenger {
 	// Constructor below
 	
 	public Passenger(){
-		
+		this.id=id;
 	}
 	
 	
@@ -18,12 +18,12 @@ public class Passenger {
 	
 	public Contact getContact() {
 		
-		return 
+		return contact ;
 	}
 	
 	public Address getAddress() {
 		
-		return
+		return address;
 	}
 	
 	

@@ -17,26 +17,34 @@ public class Ticket {
 	// Constructor below 
 	
 	public Ticket() {
-		
+		this.canceled=canceled;
 	}
 	
 	
 	// Methods below
 	
 	public String checkFlightStatus(){
-		
-		return "Hello" ;
+		if (canceled==true)
+			return "Confirmed" ;
+			else
+				return "Cancelled";
 
 	}
 	
 	public void isCanceled() {
 		
-		
+		canceled=true;
 	}
 	
 	public int getFlightDuration() {
-		
-		return ;
+    
+		return (parseInt(departureDateTime)- parseInt (arrivalDateTime));
+	}
+
+
+	private int parseInt(String departureDateTime2) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 }

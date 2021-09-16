@@ -8,18 +8,18 @@ public class RegularTicket extends Ticket {
 	// Constructor below
 	
 	 public RegularTicket() {
-		 
+		 this.additionalServices=additionalServices;
 	 }
 	 
 	// Methods below
 	
 	public String getAdditionalServices() {
 		
-		return "Hello";
+		return additionalServices;
 	}
 	
 	public void updateAdditionalServices(String additionalServices) {
-		
+		this.additionalServices=additionalServices;
 	}
 	
 }

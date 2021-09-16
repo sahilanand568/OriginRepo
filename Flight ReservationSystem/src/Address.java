@@ -17,11 +17,13 @@ public class Address {
 	
 	public String getAddressDetails() {
 		
-		return "Hello";
+		return ("Street: " + street + "," + "City: " + city + "," + "State: " + state );
 	}
 	
 	
 	public void updateAddressDetails(String addressDetails) {
-		
+		this.street=street;
+	    this.city=city;
+    	this.state=state;
 	}
 }

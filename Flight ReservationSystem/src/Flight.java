@@ -12,7 +12,7 @@ public class Flight {
 	// Constructor below
 	
 	public Flight() {
-		
+		this.seatsBooked=seatsBooked;
 	}
 	
 	// Getters and Setters
@@ -28,16 +28,18 @@ public class Flight {
 	
 	public String getFlightDetails() {
 		
-		return "Hello";
+		return ("Flight Number is: " + flightNumber + "," + "Airline is: " + airline + "," + "Total capacity of the flight is: " + capacity + "Number of Seats booked is: " + this.seatsBooked);
 	}
 	
 	public boolean checkFlightAvailability() {
-		
-		return true;
+		if (capacity-seatsBooked >0)
+		        return true;
+		else
+			return false;
 	}
 	
 	public void updateBookingCounter() {
-		
+		this.seatsBooked=seatsBooked;
 	}
 	
 }
